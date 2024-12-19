@@ -28,7 +28,6 @@ class _Home extends StatelessWidget {
     const divider = Divider(
       height: 0.5,
     );
-    const title = Text('AppBar Image Size');
     final image = Image.asset(
       'assets/dash.png',
       color: Colors.black,
@@ -44,13 +43,14 @@ class _Home extends StatelessWidget {
             divider,
             AppBar(
               primary: false,
-              title: title,
+              title: Text('そのまま'),
               leading: image,
             ),
             divider,
+            divider,
             AppBar(
               primary: false,
-              title: title,
+              title: Text('Center で囲む'),
               leading: Center(
                 child: image,
               ),
