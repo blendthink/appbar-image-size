@@ -65,6 +65,22 @@ class _Home extends StatelessWidget {
               ),
             ),
             divider,
+            ConstrainedBox(
+              constraints: BoxConstraints(maxHeight: kToolbarHeight),
+              child: NavigationToolbar(
+                leading: ConstrainedBox(
+                  constraints: BoxConstraints.tightFor(width: kToolbarHeight),
+                  child: image,
+                ),
+                middle: Text(
+                  '再現する',
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+                centerMiddle: true,
+                middleSpacing: NavigationToolbar.kMiddleSpacing,
+              ),
+            ),
+            divider,
           ],
         ),
       ),
