@@ -33,8 +33,8 @@ class _Home extends StatelessWidget {
     final image = Image.asset(
       'assets/dash.png',
       color: Colors.black,
-      width: 32,
-      height: 32,
+      width: 40,
+      height: 40,
     );
 
     return Scaffold(
