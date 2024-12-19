@@ -56,6 +56,15 @@ class _Home extends StatelessWidget {
               ),
             ),
             divider,
+            AppBar(
+              primary: false,
+              title: Text('IconButton で囲む'),
+              leading: IconButton(
+                icon: image,
+                onPressed: () {},
+              ),
+            ),
+            divider,
           ],
         ),
       ),
