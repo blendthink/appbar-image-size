@@ -66,7 +66,7 @@ class _Home extends StatelessWidget {
             ),
             divider,
             ConstrainedBox(
-              constraints: BoxConstraints(maxHeight: kToolbarHeight),
+              constraints: BoxConstraints.tightFor(height: kToolbarHeight),
               child: NavigationToolbar(
                 leading: ConstrainedBox(
                   constraints: BoxConstraints.tightFor(width: kToolbarHeight),
